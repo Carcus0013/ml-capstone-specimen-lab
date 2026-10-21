@@ -1,0 +1,6 @@
+# Keep the assigned datasets byte-for-byte identical on every platform
+data/raw/*.csv -text
+# Notebooks and model files are never line-ending converted
+*.ipynb -text
+*.joblib binary
+*.png binary
