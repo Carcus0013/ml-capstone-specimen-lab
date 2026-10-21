@@ -1,7 +1,7 @@
 {
   "name": "Random Forest Regressor",
   "file": "random_forest_regressor.joblib",
-  "saved_utc": "2026-10-21T08:03:01+00:00",
+  "saved_utc": "2026-10-21T08:39:47+00:00",
   "environment": {
     "python": "3.13.9",
     "scikit-learn": "1.7.2",
@@ -13,8 +13,8 @@
   "selected": false,
   "test_metrics": {
     "R2": 0.9580947045968263,
-    "RMSE": 0.11231887124388336,
-    "MAE": 0.09128275000000008
+    "RMSE": 0.11231887124388332,
+    "MAE": 0.09128275000000005
   },
   "best_params": {
     "n_estimators": 200,

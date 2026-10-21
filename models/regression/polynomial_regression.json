@@ -1,7 +1,7 @@
 {
   "name": "Polynomial Regression",
   "file": "polynomial_regression.joblib",
-  "saved_utc": "2026-10-21T08:03:01+00:00",
+  "saved_utc": "2026-10-21T08:39:46+00:00",
   "environment": {
     "python": "3.13.9",
     "scikit-learn": "1.7.2",

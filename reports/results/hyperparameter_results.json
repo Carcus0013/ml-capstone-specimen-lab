@@ -91,10 +91,10 @@
         "max_depth": 20
       },
       "Best CV R2": 0.9614276155089984,
-      "Baseline test R2": 0.9568235122931661,
+      "Baseline test R2": 0.9568235122931662,
       "Tuned test R2": 0.9580947045968263,
-      "R2 change": 0.0012711923036602402,
-      "RMSE change": -0.0016908627703666884
+      "R2 change": 0.0012711923036601291,
+      "RMSE change": -0.0016908627703666745
     },
     "Polynomial Regression": {
       "Search": "grid search",
