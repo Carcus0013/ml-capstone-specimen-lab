@@ -1,0 +1,44 @@
+{
+  "selected_model": "Logistic Regression",
+  "file": "logistic_regression.joblib",
+  "rule": "0 poisonous->edible and best test F1; CV F1 within 1 SD of the best = tied; smallest tied model",
+  "test_metrics": {
+    "Accuracy": 1.0,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1 (weighted)": 1.0,
+    "ROC-AUC": 1.0,
+    "Poisonous recall": 1.0,
+    "Poisonous predicted edible": 0
+  },
+  "cv": {
+    "f1": [
+      0.9992307478099617,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "accuracy": [
+      0.9992307692307693,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roc_auc": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "log_loss": [
+      -0.0015119303768182802,
+      -0.0006691398470778284,
+      -0.00035788050978679604,
+      -0.0003839710427869613,
+      -0.00023212751876614858
+    ]
+  }
+}

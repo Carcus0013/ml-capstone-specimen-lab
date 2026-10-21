@@ -1,0 +1,32 @@
+{
+  "name": "Gaussian Naive Bayes",
+  "file": "gaussian_naive_bayes.joblib",
+  "saved_utc": "2026-10-21T08:17:47+00:00",
+  "environment": {
+    "python": "3.13.9",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "task": "classification",
+  "target": "class",
+  "classes": {
+    "0": "edible",
+    "1": "poisonous"
+  },
+  "positive_class": 1,
+  "selected": false,
+  "test_metrics": {
+    "Accuracy": 0.9932307692307693,
+    "Precision": 0.9932695263805399,
+    "Recall": 0.9932307692307693,
+    "F1 (weighted)": 0.9932317032996818,
+    "ROC-AUC": 0.9992158183246724,
+    "Poisonous recall": 0.9974457215836526,
+    "Poisonous predicted edible": 2
+  },
+  "best_params": {
+    "var_smoothing": 0.0001
+  },
+  "cv_f1_mean": 0.9916928739032385
+}

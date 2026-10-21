@@ -59,7 +59,7 @@ def make_regression_pipeline(model, poly_degree=None):
 # ---------------------------------------------------------------------------
 def classification_xy(df):
     X = df[config.CLF_FEATURES].copy()     # veil-type (constant) is not selected
-    y = df[config.CLF_TARGET].copy()
+    y = df[config.CLF_TARGET].map(config.CLF_TARGET_ENCODING).astype(int)   # 0 = edible, 1 = poisonous
     return X, y
 
 

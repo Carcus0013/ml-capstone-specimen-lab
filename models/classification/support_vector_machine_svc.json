@@ -1,0 +1,33 @@
+{
+  "name": "Support Vector Machine (SVC)",
+  "file": "support_vector_machine_svc.joblib",
+  "saved_utc": "2026-10-21T08:17:47+00:00",
+  "environment": {
+    "python": "3.13.9",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "task": "classification",
+  "target": "class",
+  "classes": {
+    "0": "edible",
+    "1": "poisonous"
+  },
+  "positive_class": 1,
+  "selected": false,
+  "test_metrics": {
+    "Accuracy": 1.0,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1 (weighted)": 1.0,
+    "ROC-AUC": 1.0,
+    "Poisonous recall": 1.0,
+    "Poisonous predicted edible": 0
+  },
+  "best_params": {
+    "C": 1,
+    "kernel": "linear"
+  },
+  "cv_f1_mean": 1.0
+}

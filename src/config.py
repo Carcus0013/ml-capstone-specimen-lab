@@ -52,8 +52,12 @@ REG_DROPPED = {
 # Classification track: mushrooms.csv (UCI Mushroom data, all categorical)
 # ---------------------------------------------------------------------------
 CLF_TARGET = "class"
-CLF_POSITIVE = "p"        # poisonous: the safety-critical class
-CLF_CLASS_LABELS = {"e": "edible", "p": "poisonous"}
+CLF_CLASS_LABELS = {"e": "edible", "p": "poisonous"}      # raw codes in the CSV
+# Models are trained on an integer target. Besides being conventional, this avoids a
+# scikit-learn 1.7.2 failure in KNeighborsClassifier(metric="manhattan") with string labels.
+CLF_TARGET_ENCODING = {"e": 0, "p": 1}
+CLF_CLASS_NAMES = {0: "edible", 1: "poisonous"}
+CLF_POSITIVE = 1          # poisonous: the safety-critical class
 CLF_DROPPED = {
     "veil-type": "constant column: every row has the value 'p'",
 }

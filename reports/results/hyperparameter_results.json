@@ -120,5 +120,144 @@
       "R2 change": 9.731244806954198e-05,
       "RMSE change": -0.0004134367371333228
     }
+  },
+  "classification": {
+    "Gaussian Naive Bayes": {
+      "Configs tried": 13,
+      "Best params": {
+        "var_smoothing": 0.0001
+      },
+      "Best CV F1": 0.9916928739032385,
+      "Baseline test F1": 0.9698533484812215,
+      "Tuned test F1": 0.9932317032996818,
+      "F1 change": 0.02337835481846029,
+      "Baseline poisonous->edible": 2,
+      "Tuned poisonous->edible": 2
+    },
+    "AdaBoost": {
+      "Configs tried": 12,
+      "Best params": {
+        "learning_rate": 1.0,
+        "n_estimators": 200
+      },
+      "Best CV F1": 0.9996922901900671,
+      "Baseline test F1": 0.9981537159251258,
+      "Tuned test F1": 1.0,
+      "F1 change": 0.0018462840748741938,
+      "Baseline poisonous->edible": 3,
+      "Tuned poisonous->edible": 0
+    },
+    "Bagging (Decision Tree)": {
+      "Configs tried": 16,
+      "Best params": {
+        "max_features": 0.5,
+        "max_samples": 0.5,
+        "n_estimators": 25
+      },
+      "Best CV F1": 1.0,
+      "Baseline test F1": 0.9987691738259951,
+      "Tuned test F1": 1.0,
+      "F1 change": 0.0012308261740049398,
+      "Baseline poisonous->edible": 2,
+      "Tuned poisonous->edible": 0
+    },
+    "Logistic Regression": {
+      "Configs tried": 6,
+      "Best params": {
+        "C": 100
+      },
+      "Best CV F1": 0.9998461495619925,
+      "Baseline test F1": 0.9993846013828227,
+      "Tuned test F1": 1.0,
+      "F1 change": 0.0006153986171772985,
+      "Baseline poisonous->edible": 1,
+      "Tuned poisonous->edible": 0
+    },
+    "K-Nearest Neighbors": {
+      "Configs tried": 32,
+      "Best params": {
+        "metric": "euclidean",
+        "n_neighbors": 1,
+        "weights": "uniform"
+      },
+      "Best CV F1": 1.0,
+      "Baseline test F1": 1.0,
+      "Tuned test F1": 1.0,
+      "F1 change": 0.0,
+      "Baseline poisonous->edible": 0,
+      "Tuned poisonous->edible": 0
+    },
+    "Support Vector Machine (SVC)": {
+      "Configs tried": 8,
+      "Best params": {
+        "C": 1,
+        "kernel": "linear"
+      },
+      "Best CV F1": 1.0,
+      "Baseline test F1": 1.0,
+      "Tuned test F1": 1.0,
+      "F1 change": 0.0,
+      "Baseline poisonous->edible": 0,
+      "Tuned poisonous->edible": 0
+    },
+    "Random Forest": {
+      "Configs tried": 24,
+      "Best params": {
+        "max_depth": null,
+        "max_features": "sqrt",
+        "n_estimators": 25
+      },
+      "Best CV F1": 1.0,
+      "Baseline test F1": 1.0,
+      "Tuned test F1": 1.0,
+      "F1 change": 0.0,
+      "Baseline poisonous->edible": 0,
+      "Tuned poisonous->edible": 0
+    },
+    "Gradient Boosting": {
+      "Configs tried": 18,
+      "Best params": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+      },
+      "Best CV F1": 0.9996922901900671,
+      "Baseline test F1": 0.9987691738259951,
+      "Tuned test F1": 0.9987691738259951,
+      "F1 change": 0.0,
+      "Baseline poisonous->edible": 2,
+      "Tuned poisonous->edible": 2
+    },
+    "MLP Neural Network": {
+      "Configs tried": 18,
+      "Best params": {
+        "activation": "relu",
+        "alpha": 0.0001,
+        "hidden_layer_sizes": [
+          64,
+          32
+        ]
+      },
+      "Best CV F1": 1.0,
+      "Baseline test F1": 1.0,
+      "Tuned test F1": 1.0,
+      "F1 change": 0.0,
+      "Baseline poisonous->edible": 0,
+      "Tuned poisonous->edible": 0
+    },
+    "Decision Tree": {
+      "Configs tried": 42,
+      "Best params": {
+        "criterion": "gini",
+        "max_depth": 5,
+        "min_samples_leaf": 1
+      },
+      "Best CV F1": 0.9996922901900671,
+      "Baseline test F1": 1.0,
+      "Tuned test F1": 0.9987691738259951,
+      "F1 change": -0.0012308261740049398,
+      "Baseline poisonous->edible": 0,
+      "Tuned poisonous->edible": 2
+    }
   }
 }
