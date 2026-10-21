@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap");
+
+:root {
+  --ink: #18262F;
+  --muted: #52636B;
+  --rule: #D3DCD8;
+  --paper: #F3F6F4;
+  --surface: #FFFFFF;
+  --danger: #B3263E;
+  --safe: #2F7D5B;
+  --banana: #B07D0A;
+  --mushroom: #6D4C8A;
+  --meteorite: #2B6A8F;
+}
+
+html, body, .stApp, [data-testid="stMarkdownContainer"], .stApp p, .stApp li, .stApp label,
+.stApp input, .stApp textarea, .stApp button, [data-testid="stWidgetLabel"] {
+  font-family: "Atkinson Hyperlegible", "Segoe UI", Arial, sans-serif;
+}
+.stApp h1, .stApp h2, .stApp h3, .stApp h4 {
+  font-family: "Bricolage Grotesque", "Segoe UI", Arial, sans-serif;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.stApp h2 { font-size: 1.55rem; margin-top: 1.2rem; }
+.stApp h3 { font-size: 1.2rem; }
+[data-testid="stMarkdownContainer"] p, [data-testid="stMarkdownContainer"] li { max-width: 78ch; line-height: 1.55; }
+.block-container { max-width: 1180px; padding-top: 3.2rem; }
+
+/* Page header: track-coloured rule under the question */
+.page-head { margin: 0.4rem 0 1.4rem; }
+.page-head h1 { font-size: 2.35rem; line-height: 1.1; margin: 0.15rem 0 0.4rem; padding: 0; }
+.page-kicker { color: var(--track, var(--muted)); font-weight: 700; margin: 0; font-size: 0.95rem; }
+.page-question { color: var(--muted); font-size: 1.08rem; margin: 0; padding-bottom: 0.8rem;
+  border-bottom: 3px solid var(--track, var(--rule)); max-width: 70ch; }
+.page-head.plain .page-question { border-bottom-color: var(--rule); }
+
+/* Home hero: three questions, each answered by its selected model */
+.hero h1 { font-size: 2.9rem; line-height: 1.05; max-width: 18ch; margin-bottom: 0.6rem; }
+.hero .lede { font-size: 1.12rem; color: var(--muted); max-width: 62ch; margin-bottom: 1.6rem; }
+.questions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin: 0.5rem 0 1.5rem; }
+.question { border-top: 6px solid var(--track); padding-top: 0.9rem; }
+.question h2 { font-size: 1.6rem !important; line-height: 1.15; margin: 0 0 0.5rem !important; }
+.question .dataset { color: var(--muted); margin: 0 0 0.9rem; font-size: 0.95rem; }
+.question .answer { margin: 0; }
+.question .answer strong { color: var(--track); }
+.question .figure { font-family: "Bricolage Grotesque", sans-serif; font-size: 2.1rem; color: var(--ink);
+  margin: 0.2rem 0 0; line-height: 1.1; }
+.question .figure-label { color: var(--muted); font-size: 0.9rem; margin: 0; }
+@media (max-width: 860px) {
+  .questions { grid-template-columns: 1fr; gap: 1.4rem; }
+  .hero h1 { font-size: 2.2rem; }
+}
+
+/* The single emphasised prediction output */
+.result { background: var(--soft); border-left: 6px solid var(--track); padding: 1rem 1.25rem; margin: 0.6rem 0 1rem; }
+.result-label { margin: 0; color: var(--muted); font-weight: 700; }
+.result-value { margin: 0.1rem 0; font-family: "Bricolage Grotesque", sans-serif; font-size: 2.6rem; line-height: 1.1; color: var(--ink); }
+.result-detail { margin: 0; color: var(--ink); }
+
+/* Notes */
+.note { padding: 0.7rem 1rem; margin: 0.5rem 0 0.9rem; border-left: 4px solid var(--rule); background: var(--surface); max-width: 90ch; }
+.note-warn { border-left-color: #B07D0A; }
+.note-danger { border-left-color: var(--danger); background: #FBEFF1; }
+
+/* Keep focus visible for keyboard users */
+.stApp button:focus-visible, .stApp a:focus-visible, .stApp input:focus-visible { outline: 3px solid var(--meteorite); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

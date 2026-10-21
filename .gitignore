@@ -29,3 +29,6 @@ Thumbs.db
 /banana_quality_dataset.csv
 /meteorite-landings.csv
 /mushrooms.csv
+
+# Local Claude Code preview configuration
+.claude/
