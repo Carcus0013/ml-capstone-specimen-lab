@@ -1,0 +1,971 @@
+{
+  "banana_quality_dataset.csv": {
+    "dataset": "banana_quality_dataset.csv",
+    "rows": 1000,
+    "columns": 16,
+    "column_names": [
+      "sample_id",
+      "variety",
+      "region",
+      "quality_score",
+      "quality_category",
+      "ripeness_index",
+      "ripeness_category",
+      "sugar_content_brix",
+      "firmness_kgf",
+      "length_cm",
+      "weight_g",
+      "harvest_date",
+      "tree_age_years",
+      "altitude_m",
+      "rainfall_mm",
+      "soil_nitrogen_ppm"
+    ],
+    "numeric_columns": [
+      "sample_id",
+      "quality_score",
+      "ripeness_index",
+      "sugar_content_brix",
+      "firmness_kgf",
+      "length_cm",
+      "weight_g",
+      "tree_age_years",
+      "altitude_m",
+      "rainfall_mm",
+      "soil_nitrogen_ppm"
+    ],
+    "categorical_columns": [
+      "variety",
+      "region",
+      "quality_category",
+      "ripeness_category",
+      "harvest_date"
+    ],
+    "missing_cells": 0,
+    "sentinel_coded_cells": 0,
+    "duplicate_rows": 0,
+    "duplicate_rows_ignoring_ids": 0,
+    "constant_columns": [],
+    "identifier_like_columns": [
+      "sample_id"
+    ],
+    "memory_mb": 0.355,
+    "column_details": [
+      {
+        "column": "sample_id",
+        "dtype": "int64",
+        "kind": "numeric",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 1000,
+        "unique_pct": 100.0,
+        "constant": false,
+        "identifier_like": true,
+        "example": 1
+      },
+      {
+        "column": "variety",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 8,
+        "unique_pct": 0.8,
+        "constant": false,
+        "identifier_like": false,
+        "example": "Manzano"
+      },
+      {
+        "column": "region",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 8,
+        "unique_pct": 0.8,
+        "constant": false,
+        "identifier_like": false,
+        "example": "Colombia"
+      },
+      {
+        "column": "quality_score",
+        "dtype": "float64",
+        "kind": "numeric",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 234,
+        "unique_pct": 23.4,
+        "constant": false,
+        "identifier_like": false,
+        "example": 1.88
+      },
+      {
+        "column": "quality_category",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 4,
+        "unique_pct": 0.4,
+        "constant": false,
+        "identifier_like": false,
+        "example": "Processing"
+      },
+      {
+        "column": "ripeness_index",
+        "dtype": "float64",
+        "kind": "numeric",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 481,
+        "unique_pct": 48.1,
+        "constant": false,
+        "identifier_like": false,
+        "example": 2.11
+      },
+      {
+        "column": "ripeness_category",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 4,
+        "unique_pct": 0.4,
+        "constant": false,
+        "identifier_like": false,
+        "example": "Turning"
+      },
+      {
+        "column": "sugar_content_brix",
+        "dtype": "float64",
+        "kind": "numeric",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 540,
+        "unique_pct": 54.0,
+        "constant": false,
+        "identifier_like": false,
+        "example": 16.83
+      },
+      {
+        "column": "firmness_kgf",
+        "dtype": "float64",
+        "kind": "numeric",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 401,
+        "unique_pct": 40.1,
+        "constant": false,
+        "identifier_like": false,
+        "example": 3.53
+      },
+      {
+        "column": "length_cm",
+        "dtype": "float64",
+        "kind": "numeric",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 790,
+        "unique_pct": 79.0,
+        "constant": false,
+        "identifier_like": false,
+        "example": 21.44
+      },
+      {
+        "column": "weight_g",
+        "dtype": "float64",
+        "kind": "numeric",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 971,
+        "unique_pct": 97.1,
+        "constant": false,
+        "identifier_like": false,
+        "example": 146.92
+      },
+      {
+        "column": "harvest_date",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 61,
+        "unique_pct": 6.1,
+        "constant": false,
+        "identifier_like": false,
+        "example": "2023-10-16"
+      },
+      {
+        "column": "tree_age_years",
+        "dtype": "float64",
+        "kind": "numeric",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 179,
+        "unique_pct": 17.9,
+        "constant": false,
+        "identifier_like": false,
+        "example": 13.7
+      },
+      {
+        "column": "altitude_m",
+        "dtype": "float64",
+        "kind": "numeric",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 980,
+        "unique_pct": 98.0,
+        "constant": false,
+        "identifier_like": false,
+        "example": 58.2
+      },
+      {
+        "column": "rainfall_mm",
+        "dtype": "float64",
+        "kind": "numeric",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 981,
+        "unique_pct": 98.1,
+        "constant": false,
+        "identifier_like": false,
+        "example": 2440.5
+      },
+      {
+        "column": "soil_nitrogen_ppm",
+        "dtype": "float64",
+        "kind": "numeric",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 767,
+        "unique_pct": 76.7,
+        "constant": false,
+        "identifier_like": false,
+        "example": 183.6
+      }
+    ],
+    "assigned_track": "Regression",
+    "specific_checks": {
+      "target_candidates": {
+        "quality_score": "continuous (float); chosen regression target",
+        "quality_category": "4-level label; exact binning of quality_score (leakage if used as a feature)"
+      },
+      "target_summary": {
+        "count": 1000.0,
+        "mean": 2.4652,
+        "std": 0.5409,
+        "min": 0.92,
+        "25%": 2.09,
+        "50%": 2.44,
+        "75%": 2.85,
+        "max": 3.89
+      },
+      "target_skew": 0.0101,
+      "quality_category_ranges": [
+        {
+          "quality_category": "Unripe",
+          "min": 0.92,
+          "max": 1.5,
+          "count": 35
+        },
+        {
+          "quality_category": "Processing",
+          "min": 1.51,
+          "max": 2.5,
+          "count": 506
+        },
+        {
+          "quality_category": "Good",
+          "min": 2.51,
+          "max": 3.5,
+          "count": 434
+        },
+        {
+          "quality_category": "Premium",
+          "min": 3.51,
+          "max": 3.89,
+          "count": 25
+        }
+      ],
+      "ripeness_category_ranges": [
+        {
+          "ripeness_category": "Green",
+          "min": 1.02,
+          "max": 2.0,
+          "count": 174
+        },
+        {
+          "ripeness_category": "Turning",
+          "min": 2.01,
+          "max": 3.99,
+          "count": 310
+        },
+        {
+          "ripeness_category": "Ripe",
+          "min": 4.02,
+          "max": 5.99,
+          "count": 349
+        },
+        {
+          "ripeness_category": "Overripe",
+          "min": 6.02,
+          "max": 7.0,
+          "count": 167
+        }
+      ],
+      "harvest_date_range": [
+        "2023-09-01",
+        "2023-10-31"
+      ],
+      "harvest_day_corr_with_target": -0.0128,
+      "suitable_tracks": [
+        "regression (quality_score)",
+        "classification (quality_category) - not used"
+      ]
+    }
+  },
+  "mushrooms.csv": {
+    "dataset": "mushrooms.csv",
+    "rows": 8124,
+    "columns": 23,
+    "column_names": [
+      "class",
+      "cap-shape",
+      "cap-surface",
+      "cap-color",
+      "bruises",
+      "odor",
+      "gill-attachment",
+      "gill-spacing",
+      "gill-size",
+      "gill-color",
+      "stalk-shape",
+      "stalk-root",
+      "stalk-surface-above-ring",
+      "stalk-surface-below-ring",
+      "stalk-color-above-ring",
+      "stalk-color-below-ring",
+      "veil-type",
+      "veil-color",
+      "ring-number",
+      "ring-type",
+      "spore-print-color",
+      "population",
+      "habitat"
+    ],
+    "numeric_columns": [],
+    "categorical_columns": [
+      "class",
+      "cap-shape",
+      "cap-surface",
+      "cap-color",
+      "bruises",
+      "odor",
+      "gill-attachment",
+      "gill-spacing",
+      "gill-size",
+      "gill-color",
+      "stalk-shape",
+      "stalk-root",
+      "stalk-surface-above-ring",
+      "stalk-surface-below-ring",
+      "stalk-color-above-ring",
+      "stalk-color-below-ring",
+      "veil-type",
+      "veil-color",
+      "ring-number",
+      "ring-type",
+      "spore-print-color",
+      "population",
+      "habitat"
+    ],
+    "missing_cells": 0,
+    "sentinel_coded_cells": 2480,
+    "duplicate_rows": 0,
+    "duplicate_rows_ignoring_ids": 0,
+    "constant_columns": [
+      "veil-type"
+    ],
+    "identifier_like_columns": [],
+    "memory_mb": 8.91,
+    "column_details": [
+      {
+        "column": "class",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 2,
+        "unique_pct": 0.02,
+        "constant": false,
+        "identifier_like": false,
+        "example": "p"
+      },
+      {
+        "column": "cap-shape",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 6,
+        "unique_pct": 0.07,
+        "constant": false,
+        "identifier_like": false,
+        "example": "x"
+      },
+      {
+        "column": "cap-surface",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 4,
+        "unique_pct": 0.05,
+        "constant": false,
+        "identifier_like": false,
+        "example": "s"
+      },
+      {
+        "column": "cap-color",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 10,
+        "unique_pct": 0.12,
+        "constant": false,
+        "identifier_like": false,
+        "example": "n"
+      },
+      {
+        "column": "bruises",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 2,
+        "unique_pct": 0.02,
+        "constant": false,
+        "identifier_like": false,
+        "example": "t"
+      },
+      {
+        "column": "odor",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 9,
+        "unique_pct": 0.11,
+        "constant": false,
+        "identifier_like": false,
+        "example": "p"
+      },
+      {
+        "column": "gill-attachment",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 2,
+        "unique_pct": 0.02,
+        "constant": false,
+        "identifier_like": false,
+        "example": "f"
+      },
+      {
+        "column": "gill-spacing",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 2,
+        "unique_pct": 0.02,
+        "constant": false,
+        "identifier_like": false,
+        "example": "c"
+      },
+      {
+        "column": "gill-size",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 2,
+        "unique_pct": 0.02,
+        "constant": false,
+        "identifier_like": false,
+        "example": "n"
+      },
+      {
+        "column": "gill-color",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 12,
+        "unique_pct": 0.15,
+        "constant": false,
+        "identifier_like": false,
+        "example": "k"
+      },
+      {
+        "column": "stalk-shape",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 2,
+        "unique_pct": 0.02,
+        "constant": false,
+        "identifier_like": false,
+        "example": "e"
+      },
+      {
+        "column": "stalk-root",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 2480,
+        "n_unique": 5,
+        "unique_pct": 0.06,
+        "constant": false,
+        "identifier_like": false,
+        "example": "e"
+      },
+      {
+        "column": "stalk-surface-above-ring",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 4,
+        "unique_pct": 0.05,
+        "constant": false,
+        "identifier_like": false,
+        "example": "s"
+      },
+      {
+        "column": "stalk-surface-below-ring",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 4,
+        "unique_pct": 0.05,
+        "constant": false,
+        "identifier_like": false,
+        "example": "s"
+      },
+      {
+        "column": "stalk-color-above-ring",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 9,
+        "unique_pct": 0.11,
+        "constant": false,
+        "identifier_like": false,
+        "example": "w"
+      },
+      {
+        "column": "stalk-color-below-ring",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 9,
+        "unique_pct": 0.11,
+        "constant": false,
+        "identifier_like": false,
+        "example": "w"
+      },
+      {
+        "column": "veil-type",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 1,
+        "unique_pct": 0.01,
+        "constant": true,
+        "identifier_like": false,
+        "example": "p"
+      },
+      {
+        "column": "veil-color",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 4,
+        "unique_pct": 0.05,
+        "constant": false,
+        "identifier_like": false,
+        "example": "w"
+      },
+      {
+        "column": "ring-number",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 3,
+        "unique_pct": 0.04,
+        "constant": false,
+        "identifier_like": false,
+        "example": "o"
+      },
+      {
+        "column": "ring-type",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 5,
+        "unique_pct": 0.06,
+        "constant": false,
+        "identifier_like": false,
+        "example": "p"
+      },
+      {
+        "column": "spore-print-color",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 9,
+        "unique_pct": 0.11,
+        "constant": false,
+        "identifier_like": false,
+        "example": "k"
+      },
+      {
+        "column": "population",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 6,
+        "unique_pct": 0.07,
+        "constant": false,
+        "identifier_like": false,
+        "example": "s"
+      },
+      {
+        "column": "habitat",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 7,
+        "unique_pct": 0.09,
+        "constant": false,
+        "identifier_like": false,
+        "example": "u"
+      }
+    ],
+    "assigned_track": "Classification",
+    "specific_checks": {
+      "target_candidates": {
+        "class": "binary label e (edible) / p (poisonous); chosen target"
+      },
+      "target_distribution": {
+        "e": 4208,
+        "p": 3916
+      },
+      "target_distribution_pct": {
+        "e": 51.8,
+        "p": 48.2
+      },
+      "stalk_root_question_mark_rows": 2480,
+      "stalk_root_question_mark_pct": 30.53,
+      "poisonous_rate_when_stalk_root_missing_pct": 70.97,
+      "poisonous_rate_when_stalk_root_known_pct": 38.2,
+      "duplicate_feature_rows_with_conflicting_labels": 0,
+      "suitable_tracks": [
+        "classification (class)"
+      ],
+      "regression_possible": false,
+      "reason_no_regression": "every column is a categorical letter code; there is no continuous outcome"
+    }
+  },
+  "meteorite-landings.csv": {
+    "dataset": "meteorite-landings.csv",
+    "rows": 45716,
+    "columns": 10,
+    "column_names": [
+      "name",
+      "id",
+      "nametype",
+      "recclass",
+      "mass",
+      "fall",
+      "year",
+      "reclat",
+      "reclong",
+      "GeoLocation"
+    ],
+    "numeric_columns": [
+      "id",
+      "mass",
+      "year",
+      "reclat",
+      "reclong"
+    ],
+    "categorical_columns": [
+      "name",
+      "nametype",
+      "recclass",
+      "fall",
+      "GeoLocation"
+    ],
+    "missing_cells": 22364,
+    "sentinel_coded_cells": 0,
+    "duplicate_rows": 0,
+    "duplicate_rows_ignoring_ids": 2561,
+    "constant_columns": [],
+    "identifier_like_columns": [
+      "name",
+      "id"
+    ],
+    "memory_mb": 14.497,
+    "column_details": [
+      {
+        "column": "name",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 45716,
+        "unique_pct": 100.0,
+        "constant": false,
+        "identifier_like": true,
+        "example": "Aachen"
+      },
+      {
+        "column": "id",
+        "dtype": "int64",
+        "kind": "numeric",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 45716,
+        "unique_pct": 100.0,
+        "constant": false,
+        "identifier_like": true,
+        "example": 1
+      },
+      {
+        "column": "nametype",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 2,
+        "unique_pct": 0.0,
+        "constant": false,
+        "identifier_like": false,
+        "example": "Valid"
+      },
+      {
+        "column": "recclass",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 466,
+        "unique_pct": 1.02,
+        "constant": false,
+        "identifier_like": false,
+        "example": "L5"
+      },
+      {
+        "column": "mass",
+        "dtype": "float64",
+        "kind": "numeric",
+        "missing": 131,
+        "missing_pct": 0.29,
+        "sentinel_coded": 0,
+        "n_unique": 12576,
+        "unique_pct": 27.51,
+        "constant": false,
+        "identifier_like": false,
+        "example": 21.0
+      },
+      {
+        "column": "fall",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 0,
+        "missing_pct": 0.0,
+        "sentinel_coded": 0,
+        "n_unique": 2,
+        "unique_pct": 0.0,
+        "constant": false,
+        "identifier_like": false,
+        "example": "Fell"
+      },
+      {
+        "column": "year",
+        "dtype": "float64",
+        "kind": "numeric",
+        "missing": 288,
+        "missing_pct": 0.63,
+        "sentinel_coded": 0,
+        "n_unique": 268,
+        "unique_pct": 0.59,
+        "constant": false,
+        "identifier_like": false,
+        "example": 1880.0
+      },
+      {
+        "column": "reclat",
+        "dtype": "float64",
+        "kind": "numeric",
+        "missing": 7315,
+        "missing_pct": 16.0,
+        "sentinel_coded": 0,
+        "n_unique": 12738,
+        "unique_pct": 27.86,
+        "constant": false,
+        "identifier_like": false,
+        "example": 50.775
+      },
+      {
+        "column": "reclong",
+        "dtype": "float64",
+        "kind": "numeric",
+        "missing": 7315,
+        "missing_pct": 16.0,
+        "sentinel_coded": 0,
+        "n_unique": 14640,
+        "unique_pct": 32.02,
+        "constant": false,
+        "identifier_like": false,
+        "example": 6.08333
+      },
+      {
+        "column": "GeoLocation",
+        "dtype": "object",
+        "kind": "categorical/text",
+        "missing": 7315,
+        "missing_pct": 16.0,
+        "sentinel_coded": 0,
+        "n_unique": 17100,
+        "unique_pct": 37.4,
+        "constant": false,
+        "identifier_like": false,
+        "example": "(50.775000, 6.083330)"
+      }
+    ],
+    "assigned_track": "Clustering",
+    "specific_checks": {
+      "target_candidates": {
+        "mass": "continuous, but predicting mass from year/location/class has no clear purpose and is not a defensible regression problem for this project",
+        "fall": "binary Fell/Found, extremely imbalanced (1107 Fell vs 44609 Found); used only for post hoc cluster interpretation",
+        "recclass": "466 meteorite classes; used only for post hoc interpretation"
+      },
+      "invalid_values": {
+        "placeholder_0_0_coordinates": 6214,
+        "year_outside_860_2016": 4,
+        "longitude_outside_-180_180": 1,
+        "mass_zero": 19
+      },
+      "geolocation_is_redundant": "GeoLocation is the string '(reclat, reclong)'; it duplicates two columns",
+      "mass_quantiles_g": {
+        "0.0": 0.0,
+        "0.25": 7.2,
+        "0.5": 32.6,
+        "0.75": 202.6,
+        "0.99": 50600.0,
+        "1.0": 60000000.0
+      },
+      "cleaning_log": [
+        {
+          "rule": "mass missing",
+          "rows_removed": 131,
+          "rows_remaining": 45585
+        },
+        {
+          "rule": "year missing",
+          "rows_removed": 274,
+          "rows_remaining": 45311
+        },
+        {
+          "rule": "coordinates missing",
+          "rows_removed": 7195,
+          "rows_remaining": 38116
+        },
+        {
+          "rule": "placeholder coordinates (0, 0)",
+          "rows_removed": 6186,
+          "rows_remaining": 31930
+        },
+        {
+          "rule": "year outside 860-2016",
+          "rows_removed": 1,
+          "rows_remaining": 31929
+        },
+        {
+          "rule": "longitude outside [-180, 180]",
+          "rows_removed": 0,
+          "rows_remaining": 31929
+        },
+        {
+          "rule": "mass equal to 0 g",
+          "rows_removed": 18,
+          "rows_remaining": 31911
+        }
+      ],
+      "rows_after_cleaning": 31911,
+      "antarctic_share_after_cleaning_pct": 69.25,
+      "suitable_tracks": [
+        "clustering (geography + log mass + year)"
+      ]
+    }
+  }
+}
