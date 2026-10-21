@@ -3,7 +3,7 @@
 *Last updated: 2026-10-21. This file records the project's state so that work can resume without repeating completed steps.*
 
 ## Current phase
-Phase F, public deployment. Everything that can be done without the user's accounts is complete and verified. The remaining blocker is authorisation to publish to GitHub and sign in to Streamlit Community Cloud.
+Complete. Deployment is verified. What remains are team-only tasks (see Outstanding).
 
 ## Completed
 | Milestone | Evidence |
@@ -36,13 +36,24 @@ Phase F, public deployment. Everything that can be done without the user's accou
 - On Windows, joblib's loky resource tracker prints harmless `KeyError` lines to the host terminal after parallel searches. They do not appear in notebook outputs.
 - One classification re-run hung in the Gradient Boosting grid search for 30 minutes while a large `pip install` and the clustering notebook were running at the same time. The same notebook had completed in about 145 s three times before, so it was re-run on its own; see the latest entry below.
 
-## Outstanding (needs the user)
-1. Create or authorise a **public GitHub repository** and push the local `main` branch. The history has milestone commits; the commit author email is the one in the local git config.
-2. Sign in to **Streamlit Community Cloud** with GitHub, deploy `app/app.py` from `main` with Python 3.13, then verify the public URL.
-3. Team tasks: rewrite every ✍️ DRAFT notebook cell in your own words (guideline 7.5), and fill in the track owners in the README (guideline 7.4).
+## Deployment (verified 2026-10-21)
+- **Repository:** https://github.com/Carcus0013/ml-capstone-specimen-lab. Created by Claude in the built-in browser at the user's request and pushed from `main` with milestone history.
+- **App:** https://ml-capstone-specimen-lab.streamlit.app on Streamlit Community Cloud, Python 3.13.16, installed from `app/requirements.txt`. The build log is clean apart from the expected "two requirements files" warning.
+- **Public access:** an anonymous request completes Streamlit's cookie redirect and returns HTTP 200; `/_stcore/health` returns `ok`.
+- **Live tests:**
+  - All 7 pages render without errors.
+  - Regression: test banana 1 is predicted at 2.71 against a measured 2.73.
+  - Classification: the poisonous test mushroom is classified as poisonous.
+  - Clustering: 48° N, 10° E, 50 kg, year 1850 is assigned to "Historic observed falls".
+  - CSV upload: 2 rows assigned, 2 rejected with reasons.
+- **Hosting limits:** the app sleeps after 12 hours without traffic, and any visitor can wake it. Memory is 690 MB to 2.7 GB, and the app's measured peak is about 305 MB locally. Pushes to `main` redeploy automatically.
+
+## Outstanding (team only)
+1. Rewrite every ✍️ DRAFT notebook cell in your own words (guideline 7.5), then re-run the notebook and commit.
+2. Fill in the track owners in the README (guideline 7.4).
 
 ## Local-only helpers (not committed)
 `.dev/` holds the notebook builder scripts. Rebuild with `python .dev/build_<track>.py` and execute with `python .dev/nbtools.py exec <track>`.
 
 ## Next action
-Push to GitHub once authorised, then deploy on Streamlit Community Cloud and test the live URL.
+Team: rewrite the DRAFT cells and add the track owners, then `git push` (the app redeploys automatically).

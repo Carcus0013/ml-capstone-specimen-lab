@@ -6,7 +6,8 @@ An end-to-end machine-learning project covering the three tracks required by the
 **clustering** of NASA's meteorite landings. Each track has a fully executed notebook,
 a shared and tested Python package, saved model pipelines, and an interactive Streamlit app.
 
-- **Live app:** *not yet deployed. See [Deployment](#deployment); this line is updated once the public URL has been verified.*
+- **Live app:** https://ml-capstone-specimen-lab.streamlit.app (Streamlit Community Cloud; verified 2026-10-21, see [Deployment](#deployment))
+- **Repository:** https://github.com/Carcus0013/ml-capstone-specimen-lab
 - **Notebooks:** [`notebooks/regression.ipynb`](notebooks/regression.ipynb), [`notebooks/classification.ipynb`](notebooks/classification.ipynb), [`notebooks/clustering.ipynb`](notebooks/clustering.ipynb)
 
 ---
@@ -120,8 +121,8 @@ that last group, 52.4% were seen falling, against 3.3% overall; the `fall` label
 Python 3.13 is recommended (the results were produced with 3.13.9; `scikit-learn` must be **1.7.2** to load the saved models).
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/Carcus0013/ml-capstone-specimen-lab.git
+cd ml-capstone-specimen-lab
 python -m venv .venv
 .venv\Scripts\activate          # Windows; on macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
@@ -185,7 +186,18 @@ The target is **Streamlit Community Cloud**, chosen after checking the current p
 
 The app's measured peak memory locally is about 305 MB, and the saved models total 6.9 MB.
 
-Steps:
+**Deployed at https://ml-capstone-specimen-lab.streamlit.app** (repository `Carcus0013/ml-capstone-specimen-lab`, branch `main`, entry point `app/app.py`, Python 3.13).
+
+Verified on 2026-10-21:
+- **Public access:** the URL loads without signing in.
+- **Build log:** clean. Dependencies were installed from `app/requirements.txt` on Python 3.13.16. Streamlit's one warning is that the repository has two requirements files, which is intended.
+- **All seven pages** render without errors.
+- **Banana prediction:** test banana 1 is predicted at 2.71 against a measured 2.73, identical to the local result.
+- **Mushroom classification:** the held-out poisonous test mushroom is classified as poisonous.
+- **New meteorite:** 48° N, 10° E, 50 kg, year 1850 is assigned to "Historic observed falls".
+- **CSV upload:** a 4-row file gave 2 rows assigned and 2 rejected, each with a reason.
+
+To redeploy from scratch:
 1. Push this repository to GitHub (public).
 2. At https://share.streamlit.io, choose **Create app → Deploy a public app from GitHub**, pick the repository and the `main` branch, and set the main file path to `app/app.py`.
 3. Under **Advanced settings**, choose **Python 3.13**. Community Cloud installs `app/requirements.txt`, because it looks next to the entrypoint first.

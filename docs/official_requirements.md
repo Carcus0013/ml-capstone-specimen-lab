@@ -19,7 +19,7 @@ The final status of each item is recorded in [`project_checklist.md`](project_ch
 |---|---|---|---|
 | G1 | End-to-end pipeline for Regression, Classification and Clustering | `notebooks/`, `src/` | All three notebooks execute top to bottom |
 | G2 | Python 3, scikit-learn, Pandas, NumPy, Matplotlib, Seaborn | `requirements.txt` | Imports in notebooks; pinned versions |
-| G3 | Submission: Jupyter notebook(s) + GitHub repository | `notebooks/*.ipynb`, git history | Executed notebooks committed; remote push (BLOCKED until authorised) |
+| G3 | Submission: Jupyter notebook(s) + GitHub repository | `notebooks/*.ipynb`, git history | Executed notebooks committed and pushed to https://github.com/Carcus0013/ml-capstone-specimen-lab |
 | G4 | Team of 3; each member owns ≥ 1 track (7.4) | — | **TEAM**: assign owners in README |
 
 ## 2. Regression track (p.1–2, §3.1; rubric §5 C1–C4)
@@ -112,7 +112,7 @@ The final status of each item is recorded in [`project_checklist.md`](project_ch
 | ID | Requirement | Implementation | Verification |
 |---|---|---|---|
 | B1 | +1 interactive GUI that accepts user inputs and returns predictions from the trained model | Streamlit app in `app/` | `tests/test_app.py` (AppTest) + manual browser test |
-| B2 | +1 public deployment via a public URL | Streamlit Community Cloud | requires GitHub and Streamlit sign-in by the user |
+| B2 | +1 public deployment via a public URL | Streamlit Community Cloud | https://ml-capstone-specimen-lab.streamlit.app, verified on the live site |
 
 ## 8. Conflicts between the task prompt and the official guidelines
 

@@ -28,7 +28,7 @@ The status here reflects the last verification run, recorded in `docs/progress.m
 | 18 | Regression notebook completed and executed | PASS | 0 error cells, executed in order (`test_notebooks_fully_executed_without_errors`) |
 | 19 | Classification notebook completed and executed | PASS | same test |
 | 20 | Clustering notebook completed and executed | PASS | same test |
-| 21 | README completed | PASS | `README.md`; live-URL line pending deployment |
+| 21 | README completed | PASS | `README.md`, including the verified live URL |
 | 22 | requirements.txt | PASS | `requirements.txt` (pinned) and `app/requirements.txt`; fresh-venv install verified |
 | 23 | Viva questions | PASS | `docs/viva_questions.md` (41 Q&A, dataset-specific) |
 | 24 | Automated tests created and executed | PASS | 55 passed (`python -m pytest`) |
@@ -39,9 +39,9 @@ The status here reflects the last verification run, recorded in `docs/progress.m
 | 29 | Model comparison interface tested | PASS | AppTest renders without exceptions; checked in a browser |
 | 30 | Data explorer tested | PASS | AppTest renders without exceptions; checked in a browser |
 | 31 | Deployment configuration completed | PASS | `app/requirements.txt`, `.streamlit/config.toml`, relative paths, startup check |
-| 32 | Public deployment attempted | BLOCKED | Needs a GitHub repository and a Streamlit Community Cloud sign-in, which only the user can authorise |
-| 33 | Public URL verified | BLOCKED | Depends on 32 |
-| 34 | Deployed prediction workflows tested | BLOCKED | Depends on 32 |
+| 32 | Public deployment attempted | PASS | Deployed on Streamlit Community Cloud from `Carcus0013/ml-capstone-specimen-lab@main`; build log clean (Python 3.13.16) |
+| 33 | Public URL verified | PASS | https://ml-capstone-specimen-lab.streamlit.app loads without signing in; all 7 pages render without errors |
+| 34 | Deployed prediction workflows tested | PASS | Live checks: regression 2.71 vs measured 2.73; poisonous mushroom correctly classified; a meteorite assigned to a cluster; CSV upload with 2 assigned and 2 rejected |
 | 35 | GitHub and deployment instructions documented | PASS | `README.md` § Deployment |
 | 36 | Requirement-by-requirement audit | PASS | table below |
 | 37 | Progress file updated | PASS | `docs/progress.md` |
@@ -70,9 +70,9 @@ The status here reflects the last verification run, recorded in `docs/progress.m
 | R2-B3 | PCA scatter for every algorithm; t-SNE for ≥ 1 | PASS | clustering §12 (t-SNE for both) |
 | R2-C1 | Clean notebooks, modular functions, comments | PASS | `src/` package; notebooks run top to bottom |
 | R2-C2 | README with dataset description, problem, results table, setup, how to run | PASS | `README.md` |
-| R2-C3 | Meaningful commit history; requirements.txt | PASS locally / **BLOCKED** on GitHub | milestone commits (`git log`); not pushed yet |
+| R2-C3 | Meaningful commit history; requirements.txt | PASS | milestone commits on https://github.com/Carcus0013/ml-capstone-specimen-lab |
 | Bonus +1 | Working GUI | PASS | `app/`, tests and browser check |
-| Bonus +1 | Public deployment | BLOCKED | needs user authorisation |
+| Bonus +1 | Public deployment | PASS | https://ml-capstone-specimen-lab.streamlit.app (verified) |
 | 7.1 | `random_state=42`; scalers fitted on train only | PASS | `src/config.py`; tests |
 | 7.2 | Consistent split; CV for the 2 best per track; summary tables | PASS | see items 15 and 16 |
 | 7.3 | Titles, labels, legends, tight layout, colour-blind palettes | PASS | `src/visualization.py` (seaborn "colorblind"); app uses the Okabe-Ito palette |
