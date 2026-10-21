@@ -1,0 +1,124 @@
+{
+  "regression": {
+    "ElasticNet Regression": {
+      "Search": "grid search",
+      "Configs tried": 20,
+      "Best params": {
+        "alpha": 0.0001,
+        "l1_ratio": 0.9
+      },
+      "Best CV R2": 0.9958536650296921,
+      "Baseline test R2": -0.006861692014072274,
+      "Tuned test R2": 0.9958644622459801,
+      "R2 change": 1.0027261542600523,
+      "RMSE change": -0.5152736125235313
+    },
+    "Lasso Regression": {
+      "Search": "grid search",
+      "Configs tried": 8,
+      "Best params": {
+        "alpha": 0.0003
+      },
+      "Best CV R2": 0.9958641692010696,
+      "Baseline test R2": -0.006861692014072274,
+      "Tuned test R2": 0.9957907345982715,
+      "R2 change": 1.0026524266123438,
+      "RMSE change": -0.514960478796905
+    },
+    "Support Vector Regressor": {
+      "Search": "grid search",
+      "Configs tried": 24,
+      "Best params": {
+        "C": 0.1,
+        "epsilon": 0.01,
+        "kernel": "linear"
+      },
+      "Best CV R2": 0.9954219131962552,
+      "Baseline test R2": 0.9629118403388516,
+      "Tuned test R2": 0.9956074870015154,
+      "R2 change": 0.03269564666266378,
+      "RMSE change": -0.06930189430280549
+    },
+    "Gradient Boosting Regressor": {
+      "Search": "random search",
+      "Configs tried": 25,
+      "Best params": {
+        "subsample": 0.8,
+        "n_estimators": 500,
+        "max_depth": 2,
+        "learning_rate": 0.05
+      },
+      "Best CV R2": 0.9927457063866829,
+      "Baseline test R2": 0.9876367881220631,
+      "Tuned test R2": 0.9935844036354003,
+      "R2 change": 0.005947615513337223,
+      "RMSE change": -0.017059833991921743
+    },
+    "K-Nearest Neighbors Regressor": {
+      "Search": "grid search",
+      "Configs tried": 60,
+      "Best params": {
+        "n_neighbors": 7,
+        "p": 2,
+        "weights": "distance"
+      },
+      "Best CV R2": 0.8348780408181996,
+      "Baseline test R2": 0.8271982433664522,
+      "Tuned test R2": 0.8328830987788263,
+      "R2 change": 0.005684855412374068,
+      "RMSE change": -0.0037831223452300666
+    },
+    "Decision Tree Regressor": {
+      "Search": "grid search",
+      "Configs tried": 24,
+      "Best params": {
+        "max_depth": 12,
+        "min_samples_leaf": 5
+      },
+      "Best CV R2": 0.9085115997789147,
+      "Baseline test R2": 0.892598722279223,
+      "Tuned test R2": 0.8949769097274499,
+      "R2 change": 0.0023781874482269316,
+      "RMSE change": -0.0020019535611029426
+    },
+    "Random Forest Regressor": {
+      "Search": "random search",
+      "Configs tried": 20,
+      "Best params": {
+        "n_estimators": 200,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "max_depth": 20
+      },
+      "Best CV R2": 0.9614276155089984,
+      "Baseline test R2": 0.9568235122931661,
+      "Tuned test R2": 0.9580947045968263,
+      "R2 change": 0.0012711923036602402,
+      "RMSE change": -0.0016908627703666884
+    },
+    "Polynomial Regression": {
+      "Search": "grid search",
+      "Configs tried": 3,
+      "Best params": {
+        "degree": 3
+      },
+      "Best CV R2": 0.998286600609142,
+      "Baseline test R2": 0.9979054820804825,
+      "Tuned test R2": 0.998664472249991,
+      "R2 change": 0.0007589901695085333,
+      "RMSE change": -0.005059385001489891
+    },
+    "Ridge Regression": {
+      "Search": "grid search",
+      "Configs tried": 13,
+      "Best params": {
+        "alpha": 0.1
+      },
+      "Best CV R2": 0.9958216939761734,
+      "Baseline test R2": 0.9957815938031036,
+      "Tuned test R2": 0.9958789062511731,
+      "R2 change": 9.731244806954198e-05,
+      "RMSE change": -0.0004134367371333228
+    }
+  }
+}

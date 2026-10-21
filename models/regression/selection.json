@@ -1,0 +1,22 @@
+{
+  "selected_model": "Polynomial Regression",
+  "file": "polynomial_regression.joblib",
+  "rule": "higher mean CV R2 (0.99829) by 0.00247, more than one SD",
+  "test_metrics": {
+    "R2": 0.998664472249991,
+    "RMSE": 0.020051401596403798,
+    "MAE": 0.015122905565097166
+  },
+  "cv": {
+    "scores": [
+      0.9988860836467044,
+      0.9982742387853825,
+      0.9978065721609334,
+      0.9982424951904614,
+      0.9982236132622284
+    ],
+    "mean": 0.998286600609142,
+    "std": 0.00034521666585768287
+  },
+  "ranking_metric": "test R2 (rubric C2); selection by mean 5-fold CV R2 among the top two"
+}

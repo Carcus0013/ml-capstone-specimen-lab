@@ -1,0 +1,24 @@
+{
+  "name": "Decision Tree Regressor",
+  "file": "decision_tree_regressor.joblib",
+  "saved_utc": "2026-10-21T08:03:01+00:00",
+  "environment": {
+    "python": "3.13.9",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "task": "regression",
+  "target": "quality_score",
+  "selected": false,
+  "test_metrics": {
+    "R2": 0.8949769097274499,
+    "RMSE": 0.1778118390133267,
+    "MAE": 0.14539359126984128
+  },
+  "best_params": {
+    "max_depth": 12,
+    "min_samples_leaf": 5
+  },
+  "cv_r2_mean": 0.9085115997789147
+}

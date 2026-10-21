@@ -1,0 +1,21 @@
+{
+  "name": "Linear Regression",
+  "file": "linear_regression.joblib",
+  "saved_utc": "2026-10-21T08:03:01+00:00",
+  "environment": {
+    "python": "3.13.9",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "task": "regression",
+  "target": "quality_score",
+  "selected": false,
+  "test_metrics": {
+    "R2": 0.9958864140561845,
+    "RMSE": 0.035190753399464064,
+    "MAE": 0.026051078191457164
+  },
+  "best_params": {},
+  "cv_r2_mean": null
+}

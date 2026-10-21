@@ -1,0 +1,26 @@
+{
+  "name": "Random Forest Regressor",
+  "file": "random_forest_regressor.joblib",
+  "saved_utc": "2026-10-21T08:03:01+00:00",
+  "environment": {
+    "python": "3.13.9",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "task": "regression",
+  "target": "quality_score",
+  "selected": false,
+  "test_metrics": {
+    "R2": 0.9580947045968263,
+    "RMSE": 0.11231887124388336,
+    "MAE": 0.09128275000000008
+  },
+  "best_params": {
+    "n_estimators": 200,
+    "min_samples_leaf": 1,
+    "max_features": 1.0,
+    "max_depth": 20
+  },
+  "cv_r2_mean": 0.9614276155089984
+}

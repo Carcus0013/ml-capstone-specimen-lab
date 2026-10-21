@@ -1,0 +1,25 @@
+{
+  "name": "K-Nearest Neighbors Regressor",
+  "file": "k_nearest_neighbors_regressor.joblib",
+  "saved_utc": "2026-10-21T08:03:01+00:00",
+  "environment": {
+    "python": "3.13.9",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "task": "regression",
+  "target": "quality_score",
+  "selected": false,
+  "test_metrics": {
+    "R2": 0.8328830987788263,
+    "RMSE": 0.22429958195301347,
+    "MAE": 0.18388689359595695
+  },
+  "best_params": {
+    "n_neighbors": 7,
+    "p": 2,
+    "weights": "distance"
+  },
+  "cv_r2_mean": 0.8348780408181996
+}

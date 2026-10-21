@@ -1,0 +1,116 @@
+{
+  "target": "quality_score",
+  "numeric": {
+    "ripeness_index": {
+      "min": 1.02,
+      "max": 7.0,
+      "median": 4.165
+    },
+    "sugar_content_brix": {
+      "min": 15.01,
+      "max": 21.97,
+      "median": 18.535
+    },
+    "firmness_kgf": {
+      "min": 0.51,
+      "max": 5.0,
+      "median": 2.68
+    },
+    "length_cm": {
+      "min": 10.0,
+      "max": 29.91,
+      "median": 19.64
+    },
+    "weight_g": {
+      "min": 81.05,
+      "max": 249.89,
+      "median": 163.555
+    },
+    "tree_age_years": {
+      "min": 2.0,
+      "max": 20.0,
+      "median": 10.75
+    },
+    "altitude_m": {
+      "min": 0.4,
+      "max": 1498.4,
+      "median": 725.1
+    },
+    "rainfall_mm": {
+      "min": 1000.5,
+      "max": 2992.0,
+      "median": 1972.75
+    },
+    "soil_nitrogen_ppm": {
+      "min": 10.0,
+      "max": 199.9,
+      "median": 104.3
+    }
+  },
+  "categorical": {
+    "variety": [
+      "Blue Java",
+      "Burro",
+      "Cavendish",
+      "Fehi",
+      "Lady Finger",
+      "Manzano",
+      "Plantain",
+      "Red Dacca"
+    ],
+    "region": [
+      "Brazil",
+      "Colombia",
+      "Costa Rica",
+      "Ecuador",
+      "Guatemala",
+      "Honduras",
+      "India",
+      "Philippines"
+    ]
+  },
+  "examples": [
+    {
+      "ripeness_index": 6.61,
+      "sugar_content_brix": 15.94,
+      "firmness_kgf": 2.61,
+      "length_cm": 21.54,
+      "weight_g": 178.15,
+      "tree_age_years": 5.8,
+      "altitude_m": 758.7,
+      "rainfall_mm": 1848.8,
+      "soil_nitrogen_ppm": 126.0,
+      "variety": "Manzano",
+      "region": "Ecuador",
+      "actual_quality_score": 2.73
+    },
+    {
+      "ripeness_index": 2.17,
+      "sugar_content_brix": 18.81,
+      "firmness_kgf": 3.88,
+      "length_cm": 16.98,
+      "weight_g": 125.24,
+      "tree_age_years": 2.1,
+      "altitude_m": 313.0,
+      "rainfall_mm": 1160.0,
+      "soil_nitrogen_ppm": 13.5,
+      "variety": "Burro",
+      "region": "Guatemala",
+      "actual_quality_score": 2.01
+    },
+    {
+      "ripeness_index": 5.97,
+      "sugar_content_brix": 17.56,
+      "firmness_kgf": 4.57,
+      "length_cm": 24.37,
+      "weight_g": 231.47,
+      "tree_age_years": 5.1,
+      "altitude_m": 905.6,
+      "rainfall_mm": 2198.7,
+      "soil_nitrogen_ppm": 11.8,
+      "variety": "Manzano",
+      "region": "Honduras",
+      "actual_quality_score": 2.79
+    }
+  ]
+}

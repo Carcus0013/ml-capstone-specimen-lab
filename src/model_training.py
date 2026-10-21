@@ -176,7 +176,8 @@ def run_model(spec, X_train, y_train, X_test, y_test, metric_fn, cv, scoring):
         out.update({
             "search": search,
             "search_seconds": t["seconds"],
-            "best_params": {k.split("__")[-1]: v for k, v in search.best_params_.items()},
+            "best_params": {k.split("__")[-1]: (v.item() if isinstance(v, np.generic) else v)
+                            for k, v in search.best_params_.items()},
             "best_cv_score": search.best_score_,
             "tuned_test": metric_fn(final, X_test, y_test),
         })

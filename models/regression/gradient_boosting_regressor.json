@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Boosting Regressor",
+  "file": "gradient_boosting_regressor.joblib",
+  "saved_utc": "2026-10-21T08:03:01+00:00",
+  "environment": {
+    "python": "3.13.9",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "task": "regression",
+  "target": "quality_score",
+  "selected": false,
+  "test_metrics": {
+    "R2": 0.9935844036354003,
+    "RMSE": 0.04394776498417124,
+    "MAE": 0.03464318394512095
+  },
+  "best_params": {
+    "subsample": 0.8,
+    "n_estimators": 500,
+    "max_depth": 2,
+    "learning_rate": 0.05
+  },
+  "cv_r2_mean": 0.9927457063866829
+}

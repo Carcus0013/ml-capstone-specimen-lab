@@ -1,0 +1,25 @@
+{
+  "name": "Support Vector Regressor",
+  "file": "support_vector_regressor.joblib",
+  "saved_utc": "2026-10-21T08:03:01+00:00",
+  "environment": {
+    "python": "3.13.9",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "task": "regression",
+  "target": "quality_score",
+  "selected": false,
+  "test_metrics": {
+    "R2": 0.9956074870015154,
+    "RMSE": 0.03636426422980518,
+    "MAE": 0.023661435825918824
+  },
+  "best_params": {
+    "C": 0.1,
+    "epsilon": 0.01,
+    "kernel": "linear"
+  },
+  "cv_r2_mean": 0.9954219131962552
+}

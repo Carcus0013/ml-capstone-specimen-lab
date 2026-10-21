@@ -1,0 +1,23 @@
+{
+  "name": "Polynomial Regression",
+  "file": "polynomial_regression.joblib",
+  "saved_utc": "2026-10-21T08:03:01+00:00",
+  "environment": {
+    "python": "3.13.9",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "task": "regression",
+  "target": "quality_score",
+  "selected": true,
+  "test_metrics": {
+    "R2": 0.998664472249991,
+    "RMSE": 0.020051401596403798,
+    "MAE": 0.015122905565097166
+  },
+  "best_params": {
+    "degree": 3
+  },
+  "cv_r2_mean": 0.998286600609142
+}

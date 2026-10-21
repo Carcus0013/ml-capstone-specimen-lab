@@ -1,0 +1,24 @@
+{
+  "name": "ElasticNet Regression",
+  "file": "elasticnet_regression.joblib",
+  "saved_utc": "2026-10-21T08:03:01+00:00",
+  "environment": {
+    "python": "3.13.9",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "task": "regression",
+  "target": "quality_score",
+  "selected": false,
+  "test_metrics": {
+    "R2": 0.9958644622459801,
+    "RMSE": 0.035284524733561584,
+    "MAE": 0.026112887994546415
+  },
+  "best_params": {
+    "alpha": 0.0001,
+    "l1_ratio": 0.9
+  },
+  "cv_r2_mean": 0.9958536650296921
+}

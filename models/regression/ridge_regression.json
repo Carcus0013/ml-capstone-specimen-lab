@@ -1,0 +1,23 @@
+{
+  "name": "Ridge Regression",
+  "file": "ridge_regression.joblib",
+  "saved_utc": "2026-10-21T08:03:01+00:00",
+  "environment": {
+    "python": "3.13.9",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "task": "regression",
+  "target": "quality_score",
+  "selected": false,
+  "test_metrics": {
+    "R2": 0.9958789062511731,
+    "RMSE": 0.03522285250670809,
+    "MAE": 0.026088628878266653
+  },
+  "best_params": {
+    "alpha": 0.1
+  },
+  "cv_r2_mean": 0.9958216939761734
+}
