@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+app/.streamlit/secrets.toml
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Local working files (not part of the submission)
+.dev/
+/23CSE301_ML_26_27_Capstone_Guidelines*.pdf
+/WhatsApp Image*.jpeg
+# Original copies of the datasets in the project root; the canonical copies are in data/raw/
+/banana_quality_dataset.csv
+/meteorite-landings.csv
+/mushrooms.csv

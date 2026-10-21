@@ -1,0 +1,22 @@
+# Full environment for notebooks, training, tests and the app (Python 3.13).
+# Versions match the environment the results were produced with; scikit-learn must
+# match exactly so the saved .joblib pipelines load correctly.
+numpy==2.3.5
+pandas==2.3.3
+scipy==1.16.3
+scikit-learn==1.7.2
+joblib==1.5.2
+matplotlib==3.10.6
+seaborn==0.13.2
+plotly==6.3.0
+streamlit==1.51.0
+
+# Notebook execution
+jupyter_client==8.6.3
+ipykernel==6.31.0
+nbformat==5.10.4
+nbclient==0.10.2
+nbconvert==7.16.6
+
+# Tests
+pytest==8.4.2
