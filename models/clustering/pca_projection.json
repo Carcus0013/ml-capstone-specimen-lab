@@ -1,0 +1,16 @@
+{
+  "name": "PCA projection",
+  "file": "pca_projection.joblib",
+  "saved_utc": "2026-10-21T08:21:13+00:00",
+  "environment": {
+    "python": "3.13.9",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "task": "projection",
+  "explained_variance_ratio": [
+    0.4078240148260625,
+    0.28412575321296407
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "K-Means",
+  "file": "k_means.joblib",
+  "saved_utc": "2026-10-21T08:21:13+00:00",
+  "environment": {
+    "python": "3.13.9",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.3.5"
+  },
+  "task": "clustering",
+  "k": 4,
+  "features_raw": [
+    "reclat",
+    "reclong",
+    "mass",
+    "year"
+  ],
+  "features_model": [
+    "geo_x",
+    "geo_y",
+    "geo_z",
+    "log10_mass",
+    "year"
+  ],
+  "metrics_all_rows": {
+    "Silhouette": 0.5740925188338009,
+    "Davies-Bouldin": 0.9235579601678654,
+    "Calinski-Harabasz": 18423.60963358948,
+    "n_clusters": 4,
+    "note": ""
+  },
+  "stability": {
+    "bootstrap_ari_mean": 0.9991855673054644,
+    "bootstrap_ari_min": 0.9987727752795322,
+    "seed_ari_mean": 0.9999406709408518,
+    "seed_ari_min": 0.9998691022671895
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "k": 4,
+  "linkage": "ward",
+  "agglomerative_sample_size": 10000,
+  "metrics": [
+    {
+      "Algorithm": "K-Means",
+      "Evaluated on": "all 31,911 rows",
+      "Silhouette": 0.5740925188338009,
+      "Davies-Bouldin": 0.9235579601678654,
+      "Calinski-Harabasz": 18423.60963358948,
+      "n_clusters": 4
+    },
+    {
+      "Algorithm": "K-Means",
+      "Evaluated on": "10,000-row sample",
+      "Silhouette": 0.5747194241724073,
+      "Davies-Bouldin": 0.9200125119340143,
+      "Calinski-Harabasz": 5521.524680955058,
+      "n_clusters": 4
+    },
+    {
+      "Algorithm": "Agglomerative (ward)",
+      "Evaluated on": "10,000-row sample",
+      "Silhouette": 0.5693318612980853,
+      "Davies-Bouldin": 0.9672577757095933,
+      "Calinski-Harabasz": 5212.714429671817,
+      "n_clusters": 4
+    }
+  ],
+  "kmeans_vs_agglomerative_ari": 0.9791964799267362,
+  "stability": {
+    "bootstrap_ari_mean": 0.9991855673054644,
+    "bootstrap_ari_min": 0.9987727752795322,
+    "seed_ari_mean": 0.9999406709408518,
+    "seed_ari_min": 0.9998691022671895
+  },
+  "k_votes": {
+    "Silhouette": 4,
+    "Davies-Bouldin": 4,
+    "Calinski-Harabasz": 3
+  },
+  "kmeans_profile": [
+    {
+      "kmeans": 0,
+      "n": 6152,
+      "median_lat": 20.916625,
+      "median_long": 53.9987,
+      "median_mass_g": 250.725,
+      "median_year": 2000.0,
+      "pct_antarctic": 0.0,
+      "pct_fell": 4.957737321196358,
+      "top_recclass": "L6, H5, H6",
+      "share_%": 19.27861865814296
+    },
+    {
+      "kmeans": 1,
+      "n": 1997,
+      "median_lat": 34.33333,
+      "median_long": -101.815,
+      "median_mass_g": 770.0,
+      "median_year": 1982.0,
+      "pct_antarctic": 0.0,
+      "pct_fell": 7.911867801702553,
+      "top_recclass": "H5, L6, H4",
+      "share_%": 6.25803014634452
+    },
+    {
+      "kmeans": 2,
+      "n": 22667,
+      "median_lat": -76.26849,
+      "median_long": 155.99999,
+      "median_mass_g": 13.98,
+      "median_year": 1990.0,
+      "pct_antarctic": 97.48091939824415,
+      "pct_fell": 0.11911589535448007,
+      "top_recclass": "L6, H5, H4",
+      "share_%": 71.03193256243928
+    },
+    {
+      "kmeans": 3,
+      "n": 1095,
+      "median_lat": 36.76667,
+      "median_long": 12.61667,
+      "median_mass_g": 6400.0,
+      "median_year": 1887.0,
+      "pct_antarctic": 0.091324200913242,
+      "pct_fell": 52.42009132420091,
+      "top_recclass": "L6, Iron, IIIAB, H5",
+      "share_%": 3.431418633073235
+    }
+  ],
+  "agglomerative_profile": [
+    {
+      "agglo": 0,
+      "n": 7113,
+      "median_lat": -76.23986,
+      "median_long": 155.83949,
+      "median_mass_g": 13.6,
+      "median_year": 1990.0,
+      "pct_fell": 0.3655279066497962
+    },
+    {
+      "agglo": 1,
+      "n": 311,
+      "median_lat": 37.13333,
+      "median_long": 23.75,
+      "median_mass_g": 4500.0,
+      "median_year": 1891.0,
+      "pct_fell": 62.37942122186495
+    },
+    {
+      "agglo": 2,
+      "n": 1868,
+      "median_lat": 20.739125,
+      "median_long": 53.9987,
+      "median_mass_g": 246.5,
+      "median_year": 2001.0,
+      "pct_fell": 2.2483940042826553
+    },
+    {
+      "agglo": 3,
+      "n": 708,
+      "median_lat": 34.48725,
+      "median_long": -101.495,
+      "median_mass_g": 954.5,
+      "median_year": 1976.0,
+      "pct_fell": 8.615819209039548
+    }
+  ],
+  "raw_feature_ranges": {
+    "reclat": [
+      -87.36667,
+      81.16667
+    ],
+    "reclong": [
+      -165.43333,
+      178.2
+    ],
+    "mass": [
+      0.01,
+      60000000.0
+    ],
+    "year": [
+      860.0,
+      2013.0
+    ]
+  },
+  "pca_explained_variance": [
+    0.4078240148260625,
+    0.28412575321296407
+  ]
+}
